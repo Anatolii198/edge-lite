@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Edge Trading Journal</title>
+<meta name="description" content="The sign-in screen of the Edge trading journal template.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314140f'/><path d='M7 22l5-7 4 4 9-11' stroke='%231baf7a' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="center-page">
+  <div class="center-card">
+    <div class="brand">
+      <div class="brand-mark">E</div>
+      <div>
+        <div class="brand-name">Edge</div>
+        <div class="brand-sub">Trading journal</div>
+      </div>
+    </div>
+
+    <h1>Welcome back</h1>
+    <p class="lead">Your journal stays on this computer. There is no account to sign into —
+      this screen is here for the traders who want one in front of their own install.</p>
+
+    <form class="form" id="form">
+      <label class="field">
+        <span>Email</span>
+        <input type="email" value="trader@example.com" autocomplete="username">
+      </label>
+      <label class="field">
+        <span>Passphrase</span>
+        <input type="password" value="demo-demo-demo" autocomplete="current-password">
+      </label>
+      <button class="btn btn-primary" type="submit"><span class="btn-label">Open the journal</span></button>
+    </form>
+
+    <p class="login-note">Nothing is checked and nothing is sent anywhere. Delete
+      <code>login.html</code> for an install that opens straight into the journal.</p>
+  </div>
+</div>
+
+<script>
+  /* A form in this template has nowhere to post to, so the screen just moves
+     on. Wire it to your own sign-in if the install needs one. */
+  document.getElementById('form').addEventListener('submit', e => {
+    e.preventDefault();
+    location.href = 'index.html';
+  });
+</script>
+</body>
+</html>
